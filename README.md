@@ -35,10 +35,10 @@
 | Status | Project | PR | Scope |
 | --- | --- | --- | --- |
 | Merged | `harry0703/MoneyPrinterTurbo` (122.6k stars) | [#1246](https://github.com/harry0703/MoneyPrinterTurbo/pull/1246) | Add Fish Audio to EN/JA TTS provider lists |
-| Merged | `CherryHQ/cherry-studio` (51.7k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+4) | Fix dead heading anchors in the reference docs |
-| Merged | `zhayujie/CowAgent` (46.9k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+2) | Ignore empty b64_json/url when saving generated images |
+| Merged | `CherryHQ/cherry-studio` (51.7k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) | Fix dead heading anchors in the reference docs |
+| Merged | `zhayujie/CowAgent` (46.9k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) | Ignore empty b64_json/url when saving generated images |
 | Merged | `volcengine/OpenViking` (36.7k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
-| Merged | `agentscope-ai/QwenPaw` (34.8k stars) | [#7269](https://github.com/agentscope-ai/QwenPaw/pull/7269) (+1) | Fix PluginAPI casing to PluginApi |
+| Merged | `agentscope-ai/QwenPaw` (34.8k stars) | [#7269](https://github.com/agentscope-ai/QwenPaw/pull/7269) | Fix PluginAPI casing to PluginApi |
 | Merged | `HKUDS/Vibe-Trading` (33.3k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `langchain-ai/openwiki` (16.4k stars) | [#712](https://github.com/langchain-ai/openwiki/pull/712) | Correct the built cli entrypoint path in DEVELOPMENT.md |
 | Merged | `NanmiCoder/cc-haha` (14.3k stars) | [#1313](https://github.com/NanmiCoder/cc-haha/pull/1313) | List WeCom, QQ and Slack IM platforms |
