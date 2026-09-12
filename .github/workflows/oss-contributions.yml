@@ -12,11 +12,6 @@ on:
 permissions:
   contents: write
 
-# 和其它写 main 分支的工作流共用一个队列，避免同时 push 撞车
-concurrency:
-  group: profile-main-write
-  cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-latest
