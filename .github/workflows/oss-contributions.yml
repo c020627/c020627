@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# 和其它写 main 分支的工作流共用一个队列，避免同时 push 撞车
+concurrency:
+  group: profile-main-write
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -26,9 +31,17 @@ jobs:
         run: node .github/scripts/update-oss-contributions.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
 
       - name: Commit README updates
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Update OSS contribution stats [skip ci]"
-          file_pattern: README.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet --cached && exit 0
+          git commit -m "Update OSS contribution stats [skip ci]"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "push attempt $attempt failed, retrying..."
+            sleep 5
+          done

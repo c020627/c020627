@@ -91,6 +91,7 @@ const contributions = [
 ];
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+const GH_USER = process.env.GH_USER || "c020627";
 const headers = {
   Accept: "application/vnd.github+json",
   "User-Agent": "c020627-profile-readme",
@@ -132,6 +133,20 @@ async function getPrStatus(repo, prNumber, pr) {
   return hasApproval ? "Approved" : "In review";
 }
 
+// 该仓库里由本人合并的 PR 总数，用于显示 "(+N more)"。搜索接口失败时返回 null。
+async function countMergedInRepo(repo) {
+  try {
+    const q = encodeURIComponent(
+      `repo:${repo} type:pr is:merged author:${GH_USER}`,
+    ).replace(/%20/g, "+");
+    const result = await githubJson(`/search/issues?q=${q}&per_page=1`);
+    return typeof result.total_count === "number" ? result.total_count : null;
+  } catch (error) {
+    console.warn(`countMergedInRepo(${repo}) skipped: ${error.message}`);
+    return null;
+  }
+}
+
 function badgeUrl(item) {
   const params = new URLSearchParams({
     label: item.status,
@@ -153,10 +168,13 @@ function render(items) {
     .join("\n");
 
   const rows = items
-    .map(
-      (item) =>
-        `| ${item.status} | \`${item.repo}\` (${item.stars} stars) | [#${item.pr}](${item.prUrl}) | ${item.scope} |`,
-    )
+    .map((item) => {
+      const more =
+        item.status === "Merged" && item.prCount > 1
+          ? ` (+${item.prCount - 1})`
+          : "";
+      return `| ${item.status} | \`${item.repo}\` (${item.stars} stars) | [#${item.pr}](${item.prUrl})${more} | ${item.scope} |`;
+    })
     .join("\n");
 
   return [
@@ -189,11 +207,15 @@ async function main() {
       prInfo,
     );
 
+    const prCount =
+      status === "Merged" ? await countMergedInRepo(contribution.repo) : null;
+
     items.push({
       ...contribution,
       status,
       stars: formatStars(repoInfo.stargazers_count),
       prUrl: prInfo.html_url,
+      prCount,
     });
   }
 
