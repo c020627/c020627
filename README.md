@@ -26,19 +26,19 @@
 <!-- OSS_CONTRIBUTIONS:START -->
 
 <p align="center">
-  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1246"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+122.7k&color=2ea44f&style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1246"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+122.9k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/CherryHQ/cherry-studio/pull/20418"><img alt="CherryHQ/cherry-studio Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=CherryHQ%2Fcherry-studio+%E2%AD%90+51.7k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/zhayujie/CowAgent/pull/3133"><img alt="zhayujie/CowAgent Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=zhayujie%2FCowAgent+%E2%AD%90+46.9k&color=2ea44f&style=for-the-badge&logo=github" /></a>
-  <a href="https://github.com/volcengine/OpenViking/pull/4213"><img alt="volcengine/OpenViking Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=volcengine%2FOpenViking+%E2%AD%90+36.8k&color=2ea44f&style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/volcengine/OpenViking/pull/4213"><img alt="volcengine/OpenViking Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=volcengine%2FOpenViking+%E2%AD%90+36.9k&color=2ea44f&style=for-the-badge&logo=github" /></a>
 </p>
 
 | Status | Project | PR | Scope |
 | --- | --- | --- | --- |
-| Merged | `harry0703/MoneyPrinterTurbo` (122.7k stars) | [#1246](https://github.com/harry0703/MoneyPrinterTurbo/pull/1246) (+1) | Add Fish Audio to EN/JA TTS provider lists |
+| Merged | `harry0703/MoneyPrinterTurbo` (122.9k stars) | [#1246](https://github.com/harry0703/MoneyPrinterTurbo/pull/1246) (+4) | Add Fish Audio to EN/JA TTS provider lists |
 | Merged | `CherryHQ/cherry-studio` (51.7k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+4) | Fix dead heading anchors in the reference docs |
-| Merged | `zhayujie/CowAgent` (46.9k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+5) | Ignore empty b64_json/url when saving generated images |
-| Merged | `volcengine/OpenViking` (36.8k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
-| Merged | `agentscope-ai/QwenPaw` (34.8k stars) | [#7269](https://github.com/agentscope-ai/QwenPaw/pull/7269) (+1) | Fix PluginAPI casing to PluginApi |
+| Merged | `zhayujie/CowAgent` (46.9k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+7) | Ignore empty b64_json/url when saving generated images |
+| Merged | `volcengine/OpenViking` (36.9k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
+| Merged | `agentscope-ai/QwenPaw` (34.9k stars) | [#7269](https://github.com/agentscope-ai/QwenPaw/pull/7269) (+1) | Fix PluginAPI casing to PluginApi |
 | Merged | `HKUDS/Vibe-Trading` (33.3k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `langchain-ai/openwiki` (16.4k stars) | [#712](https://github.com/langchain-ai/openwiki/pull/712) | Correct the built cli entrypoint path in DEVELOPMENT.md |
 | Merged | `NanmiCoder/cc-haha` (14.4k stars) | [#1313](https://github.com/NanmiCoder/cc-haha/pull/1313) | List WeCom, QQ and Slack IM platforms |
