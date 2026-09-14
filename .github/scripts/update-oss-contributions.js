@@ -11,14 +11,14 @@ const END_MARKER = "<!-- OSS_CONTRIBUTIONS:END -->";
 const contributions = [
   {
     repo: "harry0703/MoneyPrinterTurbo",
-    pr: 1246,
-    scope: "Add Fish Audio to EN/JA TTS provider lists",
+    pr: 1345,
+    scope: "Reclaim temp files orphaned by interrupted cache writes",
     highlight: true,
   },
   {
     repo: "CherryHQ/cherry-studio",
-    pr: 20418,
-    scope: "Fix dead heading anchors in the reference docs",
+    pr: 19237,
+    scope: "Remove empty Development section heading",
     highlight: true,
   },
   {
@@ -35,8 +35,8 @@ const contributions = [
   },
   {
     repo: "agentscope-ai/QwenPaw",
-    pr: 7269,
-    scope: "Fix PluginAPI casing to PluginApi",
+    pr: 7214,
+    scope: "List Access Policy as the fifth security layer",
   },
   {
     repo: "HKUDS/Vibe-Trading",
@@ -147,6 +147,47 @@ async function countMergedInRepo(repo) {
   }
 }
 
+// 汇总本人【全部】PR 的合并 / 审核中 / 已关闭数量与涉及仓库数，用于底部统计行。
+// 口径是全部 PR，不限于上方 contributions 清单里追踪的那十几条。
+async function getUserPrStats(user) {
+  const q = encodeURIComponent(`author:${user} type:pr`).replace(/%20/g, "+");
+  const items = [];
+  let total = 0;
+
+  for (let page = 1; page <= 10; page += 1) {
+    const result = await githubJson(
+      `/search/issues?q=${q}&per_page=100&page=${page}`,
+    );
+    total = result.total_count;
+    items.push(...result.items);
+    if (items.length >= total || result.items.length < 100) {
+      break;
+    }
+  }
+
+  const isMerged = (item) =>
+    Boolean(item.pull_request && item.pull_request.merged_at);
+  const countIf = (predicate) => items.filter(predicate).length;
+  const repos = new Set(
+    items.map((item) =>
+      item.repository_url.replace("https://api.github.com/repos/", ""),
+    ),
+  );
+
+  return {
+    merged: countIf(isMerged),
+    inReview: countIf((item) => item.state === "open"),
+    closed: countIf((item) => item.state !== "open" && !isMerged(item)),
+    repos: repos.size,
+    total,
+    date: new Date().toISOString().slice(0, 10),
+  };
+}
+
+function statsLine(stats) {
+  return `${stats.merged} merged · ${stats.inReview} in review · ${stats.closed} closed — ${stats.repos} repositories, ${stats.total} PRs · updated ${stats.date}`;
+}
+
 function badgeUrl(item) {
   const params = new URLSearchParams({
     label: item.status,
@@ -158,7 +199,7 @@ function badgeUrl(item) {
   return `https://img.shields.io/static/v1?${params.toString()}`;
 }
 
-function render(items) {
+function render(items, stats) {
   const highlighted = items.filter((item) => item.highlight);
   const badges = highlighted
     .map(
@@ -187,6 +228,10 @@ function render(items) {
     "| Status | Project | PR | Scope |",
     "| --- | --- | --- | --- |",
     rows,
+    "",
+    '<p align="center">',
+    `<sub>${statsLine(stats)}</sub>`,
+    "</p>",
     "",
     END_MARKER,
   ].join("\n");
@@ -226,6 +271,8 @@ async function main() {
     }
   });
 
+  const stats = await getUserPrStats(GH_USER);
+
   const readme = fs.readFileSync(README_PATH, "utf8");
   const start = readme.indexOf(START_MARKER);
   const end = readme.indexOf(END_MARKER);
@@ -236,7 +283,7 @@ async function main() {
 
   const before = readme.slice(0, start);
   const after = readme.slice(end + END_MARKER.length);
-  fs.writeFileSync(README_PATH, `${before}${render(items)}${after}`, "utf8");
+  fs.writeFileSync(README_PATH, `${before}${render(items, stats)}${after}`, "utf8");
 }
 
 main().catch((error) => {
