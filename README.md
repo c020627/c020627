@@ -7,7 +7,7 @@
 
 ##
 
-🎯 **AI Agent / LLM 应用开发 · 2026 届**
+🎯 **AI Agent / LLM 应用开发 · 2029 届研究生**
 
 ✉️ [1326713348@qq.com](mailto:1326713348@qq.com)
 
