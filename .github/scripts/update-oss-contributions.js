@@ -6,7 +6,7 @@ const START_MARKER = "<!-- OSS_CONTRIBUTIONS:START -->";
 const END_MARKER = "<!-- OSS_CONTRIBUTIONS:END -->";
 
 // 渲染后不可见，仅说明表格口径（与生成器保持一致）。
-const POLICY_COMMENT = "<!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->";
+const POLICY_COMMENT = "<!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。例外见 _gen/build.py 的 STAR_ENDORSE：极少数 star 背书价值高的仓库即使只有文档类合并也保留一行。(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->";
 
 // 每条记录都会自动从 GitHub API 拉取最新 star 数与 PR 合并状态。
 // 想加新贡献：在数组末尾追加一条 { repo, pr, scope } 即可。
@@ -16,6 +16,12 @@ const contributions = [
     repo: "harry0703/MoneyPrinterTurbo",
     pr: 1351,
     scope: "Log concat progress while ffmpeg is running",
+    highlight: true,
+  },
+  {
+    repo: "CherryHQ/cherry-studio",
+    pr: 20418,
+    scope: "Fix dead heading anchors in the reference docs",
     highlight: true,
   },
   {
@@ -34,7 +40,6 @@ const contributions = [
     repo: "HKUDS/Vibe-Trading",
     pr: 1178,
     scope: "Point official read-only MCP seed at /mcp-public endpoint",
-    highlight: true,
   },
   {
     repo: "kirodotdev/KiroCrew",
