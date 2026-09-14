@@ -6,7 +6,7 @@ const START_MARKER = "<!-- OSS_CONTRIBUTIONS:START -->";
 const END_MARKER = "<!-- OSS_CONTRIBUTIONS:END -->";
 
 // 渲染后不可见，仅说明表格口径（与生成器保持一致）。
-const POLICY_COMMENT = "<!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。Changes 列为该 PR 的完整 diffstat；(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->";
+const POLICY_COMMENT = "<!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->";
 
 // 每条记录都会自动从 GitHub API 拉取最新 star 数与 PR 合并状态。
 // 想加新贡献：在数组末尾追加一条 { repo, pr, scope } 即可。
@@ -16,53 +16,45 @@ const contributions = [
     repo: "harry0703/MoneyPrinterTurbo",
     pr: 1351,
     scope: "Log concat progress while ffmpeg is running",
-    changes: "2 files, +97/-7",
     highlight: true,
   },
   {
     repo: "zhayujie/CowAgent",
     pr: 3133,
     scope: "Ignore empty b64_json/url when saving generated images",
-    changes: "2 files, +95/-10",
     highlight: true,
   },
   {
     repo: "volcengine/OpenViking",
     pr: 4213,
     scope: "Render fields without init_value as empty on init",
-    changes: "2 files, +63/-2",
     highlight: true,
   },
   {
     repo: "HKUDS/Vibe-Trading",
     pr: 1178,
     scope: "Point official read-only MCP seed at /mcp-public endpoint",
-    changes: "5 files, +7/-7",
     highlight: true,
   },
   {
     repo: "kirodotdev/KiroCrew",
     pr: 4472,
     scope: "Refuse unknown-slot approval-mode requests before any global mutation",
-    changes: "3 files, +434/-35",
   },
   {
     repo: "rlaope/oh-my-hermes",
     pr: 1044,
     scope: "Refresh stale lintlang snapshot entry",
-    changes: "2 files, +6/-6",
   },
   {
     repo: "TencentCloud/Octop",
     pr: 348,
     scope: "Force utf-8 stdio so octop init does not crash on GBK consoles",
-    changes: "2 files, +96/-1",
   },
   {
     repo: "xuzhougeng/wisp-science",
     pr: 932,
     scope: "Support MCP Apps App→Server tool calls (serverTools / tools/call, #773)",
-    changes: "14 files, +835/-28",
   },
 ];
 
@@ -190,7 +182,7 @@ function render(items, stats) {
         item.status === "Merged" && item.prCount > 1
           ? ` (+${item.prCount - 1})`
           : "";
-      return `| ${item.status} | \`${item.repo}\` (${item.stars} stars) | [#${item.pr}](${item.prUrl})${more} | ${item.scope} | ${item.changes} |`;
+      return `| ${item.status} | \`${item.repo}\` (${item.stars} stars) | [#${item.pr}](${item.prUrl})${more} | ${item.scope} |`;
     })
     .join("\n");
 
@@ -203,8 +195,8 @@ function render(items, stats) {
     badges,
     "</p>",
     "",
-    "| Status | Project | PR | Scope | Changes |",
-    "| --- | --- | --- | --- | --- |",
+    "| Status | Project | PR | Scope |",
+    "| --- | --- | --- | --- |",
     rows,
     "",
     '<p align="center">',
