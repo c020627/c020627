@@ -40,14 +40,14 @@
 | Merged | `CherryHQ/cherry-studio` (52.0k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+7) | Fix dead heading anchors in the reference docs |
 | Merged | `zhayujie/CowAgent` (47.0k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+12) | Ignore empty b64_json/url when saving generated images |
 | Merged | `volcengine/OpenViking` (38.0k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
-| Merged | `HKUDS/Vibe-Trading` (33.6k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
+| Merged | `HKUDS/Vibe-Trading` (33.7k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `kirodotdev/KiroCrew` (4.0k stars) | [#4472](https://github.com/kirodotdev/KiroCrew/pull/4472) | Refuse unknown-slot approval-mode requests before any global mutation |
-| Merged | `rlaope/oh-my-hermes` (2.7k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
-| Merged | `TencentCloud/Octop` (3.9k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) | Force utf-8 stdio so octop init does not crash on GBK consoles |
+| Merged | `rlaope/oh-my-hermes` (2.8k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
+| Merged | `TencentCloud/Octop` (4.0k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) | Force utf-8 stdio so octop init does not crash on GBK consoles |
 | Merged | `xuzhougeng/wisp-science` (1.2k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>75 merged · 17 in review · 9 closed — 29 repositories, 101 PRs · updated 2026-09-18</sub>
+<sub>75 merged · 19 in review · 9 closed — 29 repositories, 103 PRs · updated 2026-09-19</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
