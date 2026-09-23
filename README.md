@@ -28,7 +28,7 @@
 <!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。例外见 _gen/build.py 的 STAR_ENDORSE：极少数 star 背书价值高的仓库即使只有文档类合并也保留一行。(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->
 
 <p align="center">
-  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1351"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+125.2k&color=2ea44f&style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1351"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+125.3k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/CherryHQ/cherry-studio/pull/20418"><img alt="CherryHQ/cherry-studio Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=CherryHQ%2Fcherry-studio+%E2%AD%90+52.1k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/zhayujie/CowAgent/pull/3133"><img alt="zhayujie/CowAgent Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=zhayujie%2FCowAgent+%E2%AD%90+47.1k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/volcengine/OpenViking/pull/4213"><img alt="volcengine/OpenViking Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=volcengine%2FOpenViking+%E2%AD%90+38.5k&color=2ea44f&style=for-the-badge&logo=github" /></a>
@@ -36,7 +36,7 @@
 
 | Status | Project | PR | Scope |
 | --- | --- | --- | --- |
-| Merged | `harry0703/MoneyPrinterTurbo` (125.2k stars) | [#1351](https://github.com/harry0703/MoneyPrinterTurbo/pull/1351) (+35) | Log concat progress while ffmpeg is running |
+| Merged | `harry0703/MoneyPrinterTurbo` (125.3k stars) | [#1351](https://github.com/harry0703/MoneyPrinterTurbo/pull/1351) (+35) | Log concat progress while ffmpeg is running |
 | Merged | `CherryHQ/cherry-studio` (52.1k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+7) | Fix dead heading anchors in the reference docs |
 | Merged | `zhayujie/CowAgent` (47.1k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+35) | Ignore empty b64_json/url when saving generated images |
 | Merged | `volcengine/OpenViking` (38.5k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
@@ -47,7 +47,7 @@
 | Merged | `xuzhougeng/wisp-science` (1.2k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>98 merged · 18 in review · 10 closed — 29 repositories, 126 PRs · updated 2026-09-23</sub>
+<sub>98 merged · 23 in review · 10 closed — 29 repositories, 131 PRs · updated 2026-09-23</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
