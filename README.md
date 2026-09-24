@@ -28,7 +28,7 @@
 <!-- 仅列「改动了源码」的已合并 PR，每个仓库取一条最有代表性的；纯文档 / 纯数据改动（README、docs/、*.json、*.yaml…）不计入表内。例外见 _gen/build.py 的 STAR_ENDORSE：极少数 star 背书价值高的仓库即使只有文档类合并也保留一行。(+N) 表示该仓库另有 N 个已合并 PR（含文档类）。 -->
 
 <p align="center">
-  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1351"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+125.4k&color=2ea44f&style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/harry0703/MoneyPrinterTurbo/pull/1351"><img alt="harry0703/MoneyPrinterTurbo Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=harry0703%2FMoneyPrinterTurbo+%E2%AD%90+125.5k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/CherryHQ/cherry-studio/pull/20418"><img alt="CherryHQ/cherry-studio Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=CherryHQ%2Fcherry-studio+%E2%AD%90+52.1k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/zhayujie/CowAgent/pull/3133"><img alt="zhayujie/CowAgent Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=zhayujie%2FCowAgent+%E2%AD%90+47.1k&color=2ea44f&style=for-the-badge&logo=github" /></a>
   <a href="https://github.com/volcengine/OpenViking/pull/4213"><img alt="volcengine/OpenViking Merged PR" src="https://img.shields.io/static/v1?label=Merged&message=volcengine%2FOpenViking+%E2%AD%90+38.6k&color=2ea44f&style=for-the-badge&logo=github" /></a>
@@ -36,18 +36,18 @@
 
 | Status | Project | PR | Scope |
 | --- | --- | --- | --- |
-| Merged | `harry0703/MoneyPrinterTurbo` (125.4k stars) | [#1351](https://github.com/harry0703/MoneyPrinterTurbo/pull/1351) (+35) | Log concat progress while ffmpeg is running |
-| Merged | `CherryHQ/cherry-studio` (52.1k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+7) | Fix dead heading anchors in the reference docs |
+| Merged | `harry0703/MoneyPrinterTurbo` (125.5k stars) | [#1351](https://github.com/harry0703/MoneyPrinterTurbo/pull/1351) (+35) | Log concat progress while ffmpeg is running |
+| Merged | `CherryHQ/cherry-studio` (52.1k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+8) | Fix dead heading anchors in the reference docs |
 | Merged | `zhayujie/CowAgent` (47.1k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+35) | Ignore empty b64_json/url when saving generated images |
 | Merged | `volcengine/OpenViking` (38.6k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
-| Merged | `HKUDS/Vibe-Trading` (33.9k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
+| Merged | `HKUDS/Vibe-Trading` (34.0k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `kirodotdev/KiroCrew` (4.1k stars) | [#4472](https://github.com/kirodotdev/KiroCrew/pull/4472) | Refuse unknown-slot approval-mode requests before any global mutation |
 | Merged | `rlaope/oh-my-hermes` (2.9k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
 | Merged | `TencentCloud/Octop` (4.8k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) | Force utf-8 stdio so octop init does not crash on GBK consoles |
 | Merged | `xuzhougeng/wisp-science` (1.2k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>98 merged · 23 in review · 10 closed — 29 repositories, 131 PRs · updated 2026-09-24</sub>
+<sub>99 merged · 23 in review · 10 closed — 29 repositories, 132 PRs · updated 2026-09-24</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
