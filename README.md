@@ -47,7 +47,7 @@
 | Merged | `xuzhougeng/wisp-science` (1.1k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>271 merged · 16 in review · 65 closed — 30 repositories, 352 PRs · updated 2026-11-20</sub>
+<sub>271 merged · 22 in review · 65 closed — 31 repositories, 358 PRs · updated 2026-11-20</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
