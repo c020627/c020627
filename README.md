@@ -42,12 +42,12 @@
 | Merged | `volcengine/OpenViking` (42.6k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
 | Merged | `HKUDS/Vibe-Trading` (38.7k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `kirodotdev/KiroCrew` (5.0k stars) | [#4472](https://github.com/kirodotdev/KiroCrew/pull/4472) | Refuse unknown-slot approval-mode requests before any global mutation |
-| Merged | `rlaope/oh-my-hermes` (5.9k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
-| Merged | `TencentCloud/Octop` (12.3k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) (+9) | Force utf-8 stdio so octop init does not crash on GBK consoles |
+| Merged | `rlaope/oh-my-hermes` (6.0k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
+| Merged | `TencentCloud/Octop` (12.4k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) (+9) | Force utf-8 stdio so octop init does not crash on GBK consoles |
 | Merged | `xuzhougeng/wisp-science` (1.1k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>279 merged · 20 in review · 65 closed — 31 repositories, 364 PRs · updated 2026-11-22</sub>
+<sub>281 merged · 18 in review · 65 closed — 31 repositories, 364 PRs · updated 2026-11-23</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
