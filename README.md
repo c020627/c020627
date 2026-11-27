@@ -38,16 +38,16 @@
 | --- | --- | --- | --- |
 | Merged | `harry0703/MoneyPrinterTurbo` (145.9k stars) | [#1351](https://github.com/harry0703/MoneyPrinterTurbo/pull/1351) (+36) | Log concat progress while ffmpeg is running |
 | Merged | `CherryHQ/cherry-studio` (53.9k stars) | [#20418](https://github.com/CherryHQ/cherry-studio/pull/20418) (+26) | Fix dead heading anchors in the reference docs |
-| Merged | `zhayujie/CowAgent` (48.1k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+179) | Ignore empty b64_json/url when saving generated images |
+| Merged | `zhayujie/CowAgent` (48.1k stars) | [#3133](https://github.com/zhayujie/CowAgent/pull/3133) (+184) | Ignore empty b64_json/url when saving generated images |
 | Merged | `volcengine/OpenViking` (42.9k stars) | [#4213](https://github.com/volcengine/OpenViking/pull/4213) | Render fields without init_value as empty on init |
 | Merged | `HKUDS/Vibe-Trading` (39.0k stars) | [#1178](https://github.com/HKUDS/Vibe-Trading/pull/1178) | Point official read-only MCP seed at /mcp-public endpoint |
 | Merged | `kirodotdev/KiroCrew` (5.1k stars) | [#4472](https://github.com/kirodotdev/KiroCrew/pull/4472) | Refuse unknown-slot approval-mode requests before any global mutation |
 | Merged | `rlaope/oh-my-hermes` (6.1k stars) | [#1044](https://github.com/rlaope/oh-my-hermes/pull/1044) | Refresh stale lintlang snapshot entry |
-| Merged | `TencentCloud/Octop` (12.5k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) (+9) | Force utf-8 stdio so octop init does not crash on GBK consoles |
+| Merged | `TencentCloud/Octop` (12.6k stars) | [#348](https://github.com/TencentCloud/Octop/pull/348) (+9) | Force utf-8 stdio so octop init does not crash on GBK consoles |
 | Merged | `xuzhougeng/wisp-science` (1.1k stars) | [#932](https://github.com/xuzhougeng/wisp-science/pull/932) | Support MCP Apps App→Server tool calls (serverTools / tools/call, #773) |
 
 <p align="center">
-<sub>281 merged · 28 in review · 65 closed — 31 repositories, 374 PRs · updated 2026-11-26</sub>
+<sub>286 merged · 23 in review · 65 closed — 31 repositories, 374 PRs · updated 2026-11-27</sub>
 </p>
 
 <!-- OSS_CONTRIBUTIONS:END -->
